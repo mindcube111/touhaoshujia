@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#FDFBF7">
+    <meta name="description" content="高级波普风情侣/派对惩罚游戏：真心话大冒险、命运摇摇乐。打破破冰僵局，气氛组必备！">
+    <meta property="og:title" content="HEED Number Loser - 派对游戏">
+    <meta property="og:description" content="微醺破冰、危险边缘、毫无退路的派对挑战！">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/og-image.png">
+    
+    <title>HEED Number Loser - 派对游戏</title>
+
+    <link rel="preload" href="/fonts/ZhiMangXing-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/NotoSansSC-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/NotoSansSC-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>
+      @font-face { font-family: 'Zhi Mang Xing'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/ZhiMangXing-Regular.woff2') format('woff2'); }
+      @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/NotoSansSC-Regular.woff2') format('woff2'); }
+      @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/NotoSansSC-Bold.woff2') format('woff2'); }
+      @font-face { font-family: 'Noto Sans SC'; font-style: normal; font-weight: 900; font-display: swap; src: url('/fonts/NotoSansSC-Black.woff2') format('woff2'); }
+      @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/Montserrat-Bold.woff2') format('woff2'); }
+      @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 900; font-display: swap; src: url('/fonts/Montserrat-Black.woff2') format('woff2'); }
+    </style>
+    <link rel="stylesheet" href="/fonts/fonts-lazy.css" media="print" onload="this.media='all'">
+    <script type="module" crossorigin src="/assets/index-CO425hJz.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-jpDsebLB.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-C7wBSjNG.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-HKvGgIu5.css">
+  </head>
+  <body>
+    <!-- 预加载 SVG 液态金属滤镜 -->
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+      <filter id="liquid-filter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" result="displaced" />
+        <feMerge>
+          <feMergeNode in="displaced" />
+          <feMergeNode in="SourceGraphic" opacity="0.3" />
+        </feMerge>
+      </filter>
+    </svg>
+    <div id="root">
+      <div id="app-shell" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100dvh;background:#FDFBF7;font-family:system-ui,-apple-system,sans-serif">
+        <div style="font-size:clamp(3rem,12vw,7rem);font-weight:900;letter-spacing:-0.05em;color:#1E1E1E;transform:rotate(-2deg);text-shadow:5px 5px 0 #FFD600">HEAD</div>
+        <div style="font-size:clamp(3rem,12vw,7rem);font-weight:900;letter-spacing:-0.05em;color:#1E1E1E;transform:rotate(1deg);text-shadow:5px 5px 0 #2563EB;margin-top:-8px">LOSERS</div>
+        <div style="margin-top:32px;width:48px;height:48px;border:4px solid #1E1E1E;border-top-color:#FFD600;border-radius:50%;animation:shell-spin 0.8s linear infinite"></div>
+        <style>@keyframes shell-spin{to{transform:rotate(360deg)}}</style>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+      document.addEventListener('selectstart', function(e) { if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') e.preventDefault(); });
+    </script>
+  </body>
+</html>
